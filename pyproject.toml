@@ -1,0 +1,17 @@
+[tool.poetry]
+name = "pubmed-paper-fetcher"
+version = "0.1.0"
+description = "Fetch PubMed papers with pharma/biotech affiliations"
+authors = ["Prabhavathi <Prabhavathis307@gmail.com>"]
+packages = [{ include = "pubmed_paper_fetcher" }]
+
+[tool.poetry.scripts]
+get-papers-list = "cli.main:main"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+requests = "^2.31.0"
+tqdm = "^4.66.4"
+
+[tool.poetry.dev-dependencies]
+pytest = "^8.0.0"
